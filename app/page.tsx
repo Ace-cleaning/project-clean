@@ -37,7 +37,7 @@ const features = [
   {
     name: 'Emergency',
     description:
-      'Need urgent help with snow removal or office cleaning? We've got you covered. No matter the situation, rely on our prompt and professional services.',
+      "Need urgent help with snow removal or office cleaning? We've got you covered. No matter the situation, rely on our prompt and professional services.",
     icon: ArrowPathIcon,
   },
   {
