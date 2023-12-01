@@ -7,7 +7,7 @@ import RhfWithAction from '@/components/with-action'
 
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2 } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -26,7 +26,7 @@ const features = [
     name: 'Commercial Cleaning',
     description:
       'No matter the size of your organization, we offer top-tier cleaning and facilities maintenance services that meet and exceed industry standards.',
-    icon: CloudArrowUpIcon,
+    icon: BuildingOffice2,
   },
   {
     name: 'Specialty',
