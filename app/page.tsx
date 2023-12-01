@@ -218,7 +218,7 @@ export default function Home() {
             Highlighted Services in NYC
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Our team of experienced professionals is dedicated to providing you with the highest quality service and exceeding your expectations. We offer a wide range of services to meet your specific needs, whether you're looking for assistance with snow removal or office cleaning.
+            Our
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
