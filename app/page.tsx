@@ -7,7 +7,7 @@ import RhfWithAction from '@/components/with-action'
 
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2 } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Home', href: '#' },
