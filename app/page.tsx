@@ -23,27 +23,27 @@ const stats = [
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Commercial Cleaning',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'No matter the size of your organization, we offer top-tier cleaning and facilities maintenance services that meet and exceed industry standards.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Specialty',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'We provides expert cleaning and facilities maintenance for businesses of all sizes, ensuring a cleaner, healthier, and more productive work environment. Our comprehensive services and commitment to excellence make us the ideal choice for your cleaning and facilities needs.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Emergency',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Need urgent help with snow removal or office cleaning? We've got you covered. No matter the situation, rely on our prompt and professional services.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Advanced pro',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Your One-Stop Shop for Expert Cleaning Services. Experience the difference with Advanced Pro, your trusted partner for sparkling clean spaces. ',
     icon: FingerPrintIcon,
   },
 ]
@@ -213,13 +213,12 @@ export default function Home() {
 <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Featured</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Highlighted Services in NYC
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Our team of experienced professionals is dedicated to providing you with the highest quality service and exceeding your expectations. We offer a wide range of services to meet your specific needs, whether you're looking for assistance with snow removal or office cleaning.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
