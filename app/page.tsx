@@ -26,7 +26,7 @@ const features = [
     name: 'Commercial Cleaning',
     description:
       'No matter the size of your organization, we offer top-tier cleaning and facilities maintenance services that meet and exceed industry standards.',
-    icon: BuildingOffice2,
+    icon: BuildingOffice2Icon,
   },
   {
     name: 'Specialty',
