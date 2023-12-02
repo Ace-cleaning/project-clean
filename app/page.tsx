@@ -251,6 +251,12 @@ export default function Home() {
           {/* <RhfWithZod /> */}
           <RhfWithAction />
         </div>
+        <div className='container'>
+        <h1 className='mb-10 text-center font-serif text-3xl font-medium'>
+          Contact us
+        </h1>
+        <ContactForm />
+      </div>
       </section>
     </>
 )}
