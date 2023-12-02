@@ -1,5 +1,5 @@
 "use client"
-
+import ContactForm from '@/components/contact-form'
 import Rhf from '@/components/rhf'
 import RhfWithZod from '@/components/rhf-with-zod'
 import SimpleForm from '@/components/simple'
