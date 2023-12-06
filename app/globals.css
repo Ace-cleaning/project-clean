@@ -6,11 +6,15 @@
 .sh-logo {
     max-height: 4.5rem;
 }
+.sh-footerlogo {
+    max-height: 3.5rem;
+}
 .sh-subtitle {
     background: rgb(255,255,255, 0.5);
     border-radius: 25px;
     color: black;
     font-weight: bold;
+    line-height: 3rem;
 }
 .sh-featurestop {
     padding-top: 3rem;
@@ -24,4 +28,13 @@
 }
 .sh-title-color {
     color: rgb(79 70 229);
+}
+.sh-contact {
+    margin: 0 auto;
+    max-width: 445px;
+    line-height: 1.25rem;
+    margin-top: 0.7rem;
+}
+.sh-center {
+    text-align: -webkit-center;
 }

@@ -35,14 +35,14 @@ const callouts = [
     href: '#',
   },
   {
-    name: 'Law Office & Professional Cleanings',
+    name: 'Law Office or Bank Cleanings',
     description: 'Project a professional image and ensure a healthy work environment with our law office and professional cleaning services.',
     imageSrc: 'images/s4.jpg',
     imageAlt: 'Project a professional image and ensure a healthy work environment with our law office and professional cleaning services.',
     href: '#',
   },
   {
-    name: 'Carpet Cleaning & Maintenance',
+    name: 'Carpet Cleaning and Maintenance',
     description: 'Extend the life of your carpets and keep them looking their best with our carpet cleaning and maintenance services.',
     imageSrc: 'images/s5.jpg',
     imageAlt: 'Extend the life of your carpets and keep them looking their best with our carpet cleaning and maintenance services.',
@@ -85,8 +85,9 @@ export default function Services() {
         <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
         <h2 className="text-base font-semibold leading-7 text-center text-indigo-600">Ace C&M</h2>
               <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our Commercial Cleaning Services
+              Our Professional Services
               </p>
+              <p className="mt-6  text-center text-lg leading-8 text-gray-600">Commercial Cleaning / Facility Cleaning / Electrical / Plumbing / Painting / And More...</p>
               <br/>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
@@ -99,17 +100,28 @@ export default function Services() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h3 className="mt-4 font-semibold text-gray-500 v">
+                <h3 className="mt-4 font-semibold">
                   <a href={callout.href}>
                     <span className="absolute inset-0" />
                     {callout.name}
                   </a>
                 </h3>
-                <p className="text-base  text-gray-900">{callout.description}</p>
+                <p className="sh-features text-gray-600">{callout.description}</p>
               </div>
             ))}
           </div>
+          <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Call : (201) 233-2098</p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="/contact"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Contact Us
+              </a>
+
+            </div>
         </div>
+        
       </div>
     </div>
   )
