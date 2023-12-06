@@ -4,6 +4,9 @@ import Rhf from '@/components/rhf'
 import RhfWithZod from '@/components/rhf-with-zod'
 import SimpleForm from '@/components/simple'
 import RhfWithAction from '@/components/with-action'
+import Logoclouds from '@/components/logoclouds'
+import Testimonials from '@/components/Testimonials'
+import Services from '@/components/services'
 
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
@@ -16,9 +19,9 @@ const navigation = [
   { name: 'Contact', href: '#' },
 ]
 const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: 'Book', img: '/images/logo@2x.png' },
-  { id: 2, name: 'Assets under holding', value: 'Confirm', img: '/images/logo@2x.png' },
-  { id: 3, name: 'New users annually', value: 'Relax', img: '/images/logo@2x.png' },
+  { id: 1, name: 'Effortlessly schedule your cleaning appointments online or by phone.', value: 'Convenient Scheduling and Management', img: '/images/f1.jpg' },
+  { id: 2, name: 'We offer a wide range of cleaning services tailored to the specific needs of your commercial establishment.', value: 'Comprehensive Cleaning Services Tailored to Your Needs', img: '/images/f2.jpg' },
+  { id: 3, name: 'Our team of experienced and reliable cleaning professionals is committed to providing top-notch service.', value: 'Experienced and Reliable Cleaning Professionals', img: '/images/f3.jpg' },
 ]
 
 const features = [
@@ -66,7 +69,7 @@ export default function Home() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Ace Cleaning & Maintenance</span>
               <img
-                className="h-8 w-auto"
+                className="w-auto sh-logo"
                 src="/images/logo@2x.png"
                 alt=""
               />
@@ -90,9 +93,6 @@ export default function Home() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -100,10 +100,10 @@ export default function Home() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Ace Cleaning & Maintenance</span>
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="w-auto sh-logo"
+                  src="/images/logo2@2x.png"
                   alt=""
                 />
               </a>
@@ -129,14 +129,7 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
+
               </div>
             </div>
           </Dialog.Panel>
@@ -148,13 +141,7 @@ export default function Home() {
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
+          
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
@@ -162,7 +149,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Enhance Your Business with Our Trusted Cleaning Solutions.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 sh-subtitle">
             Let Us Handle the Cleanliness, You Focus on Success.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -190,19 +177,30 @@ export default function Home() {
         </div>
       </div>
 
-    </div>{/* END Main Div */}
+</div>{/* END Main Div */}
+
+
 
 {/* How We Work */}
-<div className="bg-white py-24 sm:py-32">
+<div className="bg-white sh-featurestop">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+              <h2 className="text-base font-semibold leading-7 text-indigo-600">Ace Cleaning & Maintenance</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Serving the Greater New York City Area
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                
+              </p>
+            </div>
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat) => (
             <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
               <img src={stat.img} />
-              <div className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+              <div className="text-lg font-semibold tracking-tight text-gray-900 sm:text-lg">
                 {stat.value}
               </div>
-              <div className="text-base leading-7 text-gray-600">{stat.name}</div>
+              <div className="sh-features text-gray-600">{stat.name}</div>
             </div>
           ))}
         </dl>
@@ -239,22 +237,29 @@ export default function Home() {
       </div>
     </div>
 
-      
+    <section>
+      <Services />
+    </section>
 
+
+    <section>
+      <Testimonials />
+    </section>
+
+    <section>
+      <Logoclouds />
+    </section>
 
       
       <section className='py-24'>
-        <div className='container'>
-          <h1 className='mb-16 text-2xl font-medium'>React Hook Forms</h1>
-          {/* <SimpleForm /> */}
-          {/* <Rhf /> */}
-          {/* <RhfWithZod /> */}
-          <RhfWithAction />
-        </div>
-        <div className='container'>
-        <h1 className='mb-10 text-center font-serif text-3xl font-medium'>
-          Contact us
-        </h1>
+        <div className='container mx-auto  lg:text-center'>
+        <h2 className="text-base font-semibold leading-7 text-indigo-600">Ace C&M</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Contact Us
+              </p>
+              <p className="mt-6  text-center text-lg leading-8 text-gray-600">
+              Contact us whenever you need us, and we'll promptly provide you with an estimate and work diligently to exceed your expectations. 
+              </p><br/>
         <ContactForm />
       </div>
       </section>

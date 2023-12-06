@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.sh-logo {
+    max-height: 4.5rem;
+}
+.sh-subtitle {
+    background: rgb(255,255,255, 0.5);
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+.sh-featurestop {
+    padding-top: 3rem;
+}
+.sh-features {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+.sh-services {
+    margin-bottom: 3rem !important;
+}
+.sh-title-color {
+    color: rgb(79 70 229);
+}
