@@ -19,7 +19,7 @@ export default function About() {
         <b>Your Comprehensive Cleaning Solution for New York City and Beyond</b>
         </p>
         <p className="text-base leading-relaxed lg:w-3/4 mx-auto">
-        Ace C&M is a full-service cleaning company dedicated to providing exceptional cleaning services to a wide range of industries across New York City and surrounding areas. Our team of highly trained and experienced professionals is equipped to handle any cleaning challenge, from routine janitorial services to specialized cleanings for healthcare facilities. We are committed to exceeding our clients' expectations with every service we provide.
+        Ace C&M is a full-service cleaning company dedicated to providing exceptional cleaning services to a wide range of industries across New York City and surrounding areas. Our team of highly trained and experienced professionals is equipped to handle any cleaning challenge, from routine janitorial services to specialized cleanings for healthcare facilities. We are committed to exceeding our clients expectations with every service we provide.
         </p>
       </div>
       <div>
@@ -123,7 +123,7 @@ export default function About() {
           Unwavering Accountability
           </h2>
           <p className="leading-relaxed text-base">
-          We take full ownership of our work and are committed to meeting our clients' needs with the utmost professionalism and integrity.
+          We take full ownership of our work and are committed to meeting our clients needs with the utmost professionalism and integrity.
           </p>
           <a href="/contact" className="mt-3 text-indigo-500 inline-flex items-center">
             Contact Us
