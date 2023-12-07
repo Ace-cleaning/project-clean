@@ -101,7 +101,7 @@ export default function Home() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-          />
+          />'
         </div>
       </div>
 
@@ -111,19 +111,19 @@ export default function Home() {
   <div className="container px-20 mx-auto">
     <div className="flex flex-wrap -m-5 text-center sh-center">
       <div className="p-4 sm:w-1/5 w-1/2">
-        <img src='/images/icon-cd-lg-black.png' alt="" />
+        <img src="/images/icon-cd-lg-black.png" alt="" />
       </div>
       <div className="p-4 sm:w-1/5 w-1/2">
-        <img src='/images/icon-epa-logo-black.png' alt="" />
+        <img src="/images/icon-epa-logo-black.png" alt="" />
       </div>
       <div className="p-4 sm:w-1/5 w-1/2">
-        <img src='/images/icon-issa-1.jpg' alt="" />
+        <img src="/images/icon-issa-1.jpg" alt="" />
       </div>
       <div className="p-4 sm:w-1/5 w-1/2">
-        <img src='/images/icon-osha-black.png' alt="" />
+        <img src="/images/icon-osha-black.png" alt="" />
       </div>
       <div className="p-4 sm:w-1/5 w-1/2">
-        <img src='/images/icon-site-seal-platinum-old-black.png' alt="" />
+        <img src="/images/icon-site-seal-platinum-old-black.png" alt="" />
       </div>
     </div>
   </div>
