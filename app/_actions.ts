@@ -74,7 +74,7 @@ export async function sendEmail(data: ContactFormInputs) {
 
   if (result.success) {
     const { phone, name, email, message } = result.data;
-    console.log('sendEmail - Prepared email data:', { phone, name, email, message });
+    console.log('sendEmail - Prepared email data:', { phone, name, email, message }); 
 
     try {
       const responseData = await resend.emails.send({
