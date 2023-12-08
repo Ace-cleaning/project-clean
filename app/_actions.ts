@@ -73,8 +73,8 @@ export async function sendEmail(data: ContactFormInputs) {
   console.log('sendEmail - Schema validation result:', result);
 
   if (result.success) {
-    const { nickname, name, email, message } = result.data;
-    console.log('sendEmail - Prepared email data:', { nickname, name, email, message });
+    const { phone, name, email, message } = result.data;
+    console.log('sendEmail - Prepared email data:', { phone, name, email, message });
 
     try {
       const responseData = await resend.emails.send({
@@ -82,8 +82,8 @@ export async function sendEmail(data: ContactFormInputs) {
         to: ['delivered@luxfits.com'],
         cc: ['acecleaning.ny@gmail.com'],
         subject: 'Contact form submission',
-        text: `NickName: ${nickname}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
-        react: ContactFormEmail({ nickname, name, email, message })
+        text: `NickName: ${phone}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        react: ContactFormEmail({ phone, name, email, message })
       });
       console.log('sendEmail - Email sent successfully:', responseData);
       return { success: true, data: responseData }

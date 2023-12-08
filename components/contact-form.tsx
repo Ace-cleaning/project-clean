@@ -72,7 +72,7 @@ export default function ContactForm() {
         <input
           placeholder='Your Email Address'
           className='w-full rounded-lg'
-          {...register('mail')}
+          {...register('email')}
         />
         {errors.email?.message && (
           <p className='ml-1 mt-1 text-sm text-red-400'>

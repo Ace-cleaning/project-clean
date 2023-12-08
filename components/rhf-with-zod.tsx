@@ -39,12 +39,12 @@ export default function RhfWithZod() {
       >
         
         <input
-          placeholder='nickname'
+          placeholder='Your Phone Number'
           className='rounded-lg'
-          {...register('nickname')}
+          {...register('phone')}
         />
-        {errors.nickname?.message && (
-          <p className='text-sm text-red-400'>{errors.nickname.message}</p>
+        {errors.phone?.message && (
+          <p className='text-sm text-red-400'>{errors.phone.message}</p>
         )}
         
         <input
