@@ -44,20 +44,20 @@ export default function ContactForm() {
       
       <div>
         <input
-          placeholder='nickname'
+          placeholder='Your Phone Number'
           className='w-full rounded-lg'
-          {...register('nickname')}
+          {...register('phone')}
         />
-        {errors.nickname?.message && (
+        {errors.phone?.message && (
           <p className='ml-1 mt-1 text-sm text-red-400'>
-            {errors.nickname.message}
+            {errors.phone.message}
           </p>
         )}
       </div>
 
       <div>
         <input
-          placeholder='name'
+          placeholder='Your Name'
           className='w-full rounded-lg'
           {...register('name')}
         />
@@ -70,9 +70,9 @@ export default function ContactForm() {
 
       <div>
         <input
-          placeholder='email'
+          placeholder='Your Email Address'
           className='w-full rounded-lg'
-          {...register('email')}
+          {...register('mail')}
         />
         {errors.email?.message && (
           <p className='ml-1 mt-1 text-sm text-red-400'>
@@ -85,7 +85,7 @@ export default function ContactForm() {
         <textarea
           rows={5}
           cols={5}
-          placeholder='message'
+          placeholder='Enter Your Message'
           className='w-full rounded-lg'
           {...register('message')}
         />

@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 export const FormDataSchema = z.object({
-  nickname: z.string().nonempty('nickName is required.'),
+  phone: z.string().nonempty('Phone Number is required.'),
   name: z.string().nonempty('Name is required.'),
   message: z
     .string()
@@ -10,7 +10,7 @@ export const FormDataSchema = z.object({
 })
 
 export const ContactFormSchema = z.object({
-  nickname: z.string().nonempty('nickName is required.'),
+  phone: z.string().nonempty('Phone Number is required.'),
   name: z.string().nonempty('Name is required.'),
   email: z.string().nonempty('Email is required.').email('Invalid email.'),
   message: z

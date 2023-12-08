@@ -1,12 +1,12 @@
 interface ContactFormEmailProps {
-  nickname: string
+  phone: string
   name: string
   email: string
   message: string
 }
 
 const ContactFormEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
-  nickname,
+  phone,
   name,
   email,
   message
@@ -14,7 +14,7 @@ const ContactFormEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
   <div>
     <h1>Contact form submission</h1>
     <p>
-      From <span>{nickname}</span> <strong>{name}</strong> at {email}
+      From <span>{phone}</span> <strong>{name}</strong> at {email}
     </p>
     <h2>Message:</h2>
     <p>{message}</p>
