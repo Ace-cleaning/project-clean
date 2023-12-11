@@ -17,28 +17,28 @@ export default function Logoclouds() {
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="images/client-2.jpg"
-              alt="Bank of Hope"
+              alt="New Bank"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-              alt="Tuple"
+              src="images/client-3.jpg"
+              alt="Metro City Bank"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-              alt="SavvyCal"
+              src="images/client-4.jpg"
+              alt="PCB Bank"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-              alt="Statamic"
+              src="images/client-5.jpg"
+              alt="Hanmi Bank"
               width={158}
               height={48}
             />
