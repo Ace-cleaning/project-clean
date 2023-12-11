@@ -12,7 +12,7 @@ import Footer from '@/components/footer'
 
 import { useState } from 'react'
 
-import { Bars3Icon, XMarkIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, WrenchScrewdriverIcon, ShieldCheckIcon,  SparklesIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
 
 
 const stats = [
@@ -31,20 +31,20 @@ const features = [
   {
     name: 'Specialty',
     description:
-      'We provides expert cleaning and facilities maintenance for businesses of all sizes, ensuring a cleaner, healthier, and more productive work environment. Our comprehensive services and commitment to excellence make us the ideal choice for your cleaning and facilities needs.',
-    icon: LockClosedIcon,
+      'We provides expert cleaning and facilities maintenance for businesses of all sizes, ensuring a cleaner, healthier, and more productive work environment.',
+    icon: SparklesIcon,
   },
   {
     name: 'Emergency',
     description:
       'Need urgent help with snow removal or office cleaning? We have got you covered. No matter the situation, rely on our prompt and professional services.',
-    icon: ArrowPathIcon,
+    icon: WrenchScrewdriverIcon,
   },
   {
     name: 'Advanced pro',
     description:
       'Your One-Stop Shop for Expert Cleaning Services. Experience the difference with Advanced Pro, your trusted partner for sparkling clean spaces. ',
-    icon: FingerPrintIcon,
+    icon: ShieldCheckIcon,
   },
 ]
 
