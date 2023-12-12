@@ -10,10 +10,16 @@ import Testimonials from '@/components/testimonials'
 import Services from '@/components/services'
 import Footer from '@/components/footer'
 
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 
 import { Bars3Icon, XMarkIcon, WrenchScrewdriverIcon, ShieldCheckIcon,  SparklesIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
 
+const backgroundImages = [
+  '/images/hero.jpg',
+  '/images/hero2.jpg',
+  '/images/hero3.jpg',
+  // ... add more images as needed
+]
 
 const stats = [
   { id: 1, name: 'Effortlessly schedule your cleaning appointments online or by phone.', value: 'Convenient Scheduling and Management', img: '/images/f1.jpg' },
@@ -50,19 +56,47 @@ const features = [
 
 export default function Home() {
  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false); // new state to control fading
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsFading(true); // Start fading out
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+        setIsFading(false); // Reset fading for next cycle
+      }, 2000); // This should match the CSS transition duration
+    }, 7000); // Change image every 5000 milliseconds (7 seconds)
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+  }, []);
+
+  const backgroundImageStyle = (index: number) => ({
+    backgroundImage: `url(${backgroundImages[index]})`,
+    opacity: isFading && index === currentImageIndex ? 0 : 1,
+    transition: 'all 2s ease-in-out',
+  });
+
+
+
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const myStyle = {
-    backgroundImage: "url('/images/hero.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center"
-  };
+  // const myStyle = {
+  //   backgroundImage: "url('/images/hero.jpg')",
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center"
+  // };
   return (
     <>
 
-<div className="bg-white" style={myStyle}>
+<div className="bg-white image-container">    {/* style={myStyle} */}
+
+        <div className="background-image" style={backgroundImageStyle(currentImageIndex)} />
+        <div className="background-image" style={backgroundImageStyle((currentImageIndex + 1) % backgroundImages.length)} />
+        
       <Header/>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
