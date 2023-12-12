@@ -108,7 +108,7 @@ export default function Home() {
           <div className="text-center">
             <p className="mb-4"><b>Serving the Greater New York City Area</b></p>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Enhance Your Business with Our Trusted Cleaning & Maintenance.
+            Enhance Your Business with Our Trusted <div className='text-2xl sm:text-4xl'>Cleaning & Maintenance Service</div>
             </h1>
             <p className="mt-6 text-lg text-gray-600 sh-subtitle">
               <span>Call : (201) 233-2098 </span> 
