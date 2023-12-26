@@ -10,7 +10,7 @@ export const FormDataSchema = z.object({
 })
 
 export const ContactFormSchema = z.object({
-  phone: z.string().nonempty('Phone Number is required.'),
+  phone: z.string().nonempty('Phone Number is required.').regex(/^(?:\+1|1)?(?:[-. ]?\(?[2-9][0-8][0-9]\)?[-. ]?[2-9][0-9]{2}[-. ]?[0-9]{4})$/, 'Invalid phone number format.'),
   name: z.string().nonempty('Name is required.'),
   email: z.string().nonempty('Email is required.').email('Invalid email.'),
   message: z
