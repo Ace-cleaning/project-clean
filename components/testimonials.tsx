@@ -14,7 +14,7 @@ export default function Testimonials() {
             <figcaption className="mt-10">
               <img
                 className="mx-auto h-20 w-20 rounded-full"
-                src="images/cho.jpg"
+                src="images/cho2.jpg"
                 alt=""
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">

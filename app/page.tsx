@@ -141,7 +141,7 @@ export default function Home() {
 
 </div>{/* END Main Div */}
 
-<section className="text-gray-600 body-font mt-10">
+{/* <section className="text-gray-600 body-font mt-10">
   <div className="container px-20 mx-auto">
     <div className="flex flex-wrap -m-5 text-center sh-center">
       <div className="p-4 sm:w-1/5 w-1/2">
@@ -161,7 +161,7 @@ export default function Home() {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
 {/* How We Work */}
