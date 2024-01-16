@@ -22,9 +22,9 @@ const backgroundImages = [
 ]
 
 const stats = [
-  { id: 1, name: 'Effortlessly schedule your cleaning appointments online or by phone.', value: 'Convenient Scheduling and Management', img: '/images/f1.jpg' },
+  { id: 1, name: 'Schedule your cleaning appointments online or by phone.', value: 'Convenient Scheduling and Management', img: '/images/f1.jpg' },
   { id: 2, name: 'We offer a wide range of cleaning services tailored to the specific needs of your commercial establishment.', value: 'Comprehensive Cleaning Services Tailored to Your Needs', img: '/images/f2.jpg' },
-  { id: 3, name: 'Our team of experienced and reliable cleaning professionals is committed to providing top-notch service.', value: 'Experienced and Reliable Cleaning Professionals', img: '/images/f3.jpg' },
+  { id: 3, name: 'Our team of experienced cleaning professionals is committed to providing top-notch service.', value: 'Experienced and Reliable Cleaning Professionals', img: '/images/f3.jpg' },
 ]
 
 const features = [
@@ -112,7 +112,6 @@ export default function Home() {
             </h1>
             <p className="mt-6 text-lg text-gray-600 sh-subtitle">
               <span>Call : (201) 233-2098 </span> 
-            {/* Let Us Handle the Cleanliness, You Focus on Success. */}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -197,7 +196,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Featured</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Highlighted Our Services
+            Our Highlighted Services
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
